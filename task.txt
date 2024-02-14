@@ -1,0 +1,19 @@
+REST API  -JSON
+
+        HYBRID SERVER
+GET /users - List All users (render html document)
+GET /api/users - List All users (render json)  for mobile user
+
+
+GET/api/users/1 - get the user with id 1 
+GET/api/users/2 - get the user with id 2
+
+dynammic path parameters
+GET /api/users/:id
+:id  -> denotes a variable 
+
+POST/api/users - create new user
+
+PATCH/api/users/1 - Edit the users with id 1
+
+DELETE/api/users/1 - delete the user with user id 1

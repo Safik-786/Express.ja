@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="/home.html">home</a>
+    <br><br><br>
+
+    <h2>hii i am index page</h2>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"
+        integrity="sha384-mZLF4UVrpi/QTWPA7BjNPEnkIfRFn4ZEO3Qt/HFklTJBj/gBOV8G3HcKn4NfQblz"
+        crossorigin="anonymous">
+    </script>
+    <script>
+        const socket = io();
+        socket.on('message',(data)=>{
+            document.write(data)
+        })
+        socket.on('customServerSide',(data)=>{
+            document.write(data.description)
+        })
+
+        socket.emit('customClientSide',{name:"safik", age:'20'})
+    </script>
+
+
+</body>
+
+</html>

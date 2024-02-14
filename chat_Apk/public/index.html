@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Apk</title>
+    <!-- <script src="http://localhost:8000/socket.io/socket.io.js"></script> -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="./img/free-chat-3543025-2969412.webp" alt="">
+    </nav>
+    <div class="container">
+        <header>
+            <img id="profile-pic" src="./img/myProfileImage.jpg" alt=""> 
+            
+            <div id="name-input" type="text"  maxlength="20"> Enter Name</div> <br>
+        </header>
+
+
+        <!-- <div class="message right">
+            <span  class="spans">Safik</span>
+            <span  class="spans">2:55</span><br>
+            <div id="msg-send">Assalamualeikum</div>
+        </div>
+        <div class="message left">
+            <span  class="spans">Rahul</span>
+            <span  class="spans">2:56</span><br>
+            <div id="msg-receive">waleikumAssalam</div>
+        </div> -->
+
+
+    </div>
+    <div class="send">
+        <form accept="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+    <div id="client-count">Total Client: 0 </div>
+    
+    <div id="modal">
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./main.js"></script>
+
+
+
+    <script>
+        const profilePic= document.querySelector("#profile-pic");
+        const browse = document.querySelector('#browse')
+
+        browse.onchange= function(){
+            profilePic.src = URL.createObjectURL(browse.files[0])
+        }
+
+
+        // browse.addEventListener("change", ()=>{
+        //     console.log('hii')
+        // })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%- include('../partials/headerLinks.ejs') %>
+
+        <title>
+            <%= title %>
+        </title>
+</head>
+
+<body>
+
+    <%- include('../partials/navbar.ejs') %>
+
+        <!-- Main header -->
+        <div class="container-fluid main-header">
+            <div class="row ">
+
+                <div class="col-md-5 col-12">
+                    <img src="https://i.pinimg.com/564x/2c/23/98/2c239820d44d524fed932b9ce9046d98.jpg" alt="">
+                </div>
+                <div class="col-md-7 col-12 main-header-left ">
+                    <div class="main-container">
+                        <form class="search-form">
+                            <input type="text" id="input-cityName" placeholder="enter your city name" autocomplete="off">
+                            <button type="submit" id="submitBtn"><i class="fa-brands fa-searchengin"></i>
+                                search
+                            </button>
+                        </form>
+                    </div>
+                    <div class="weather-info">
+                        <div class="top-layer">
+                            <div id="day">Wednesday</div>
+                            <div id="today-data">13 Oct</div>
+                        </div>
+                        <div class="main-layer">
+                            <div id="city-name">delhi, In </div>
+                            <div class="middle-layer data-hide">
+                                <div id="temp"> <span id="temp-value">25</span> <sup>o</sup>C</div>
+                                <div id="temp-status"><i class="fa-solid fa-cloud"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <%- include('../partials/footer.ejs') %>
+
+
+            <script src="/js/main.js">
+                
+            </script>
+</body>
+
+</html>
+<!-- <p>Welcome to my Weather Apk</p>
+    <h1>Get the Latest <span class="text-clr"> Weather </span>Update Info Of Your City</h1>
+    <a href="/weather"><button>Check Now</button></a> -->

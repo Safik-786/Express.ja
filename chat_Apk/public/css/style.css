@@ -1,0 +1,214 @@
+.logo{
+    display: block;
+    margin: auto;
+    height: 70px;
+    border-radius: 50%;
+}
+body{
+    background: url(../img/bg7.jpg);
+    /* background-image: linear-gradient(rgb(240, 6, 190),rgb(145, 243, 243)); */
+    height: 100vh;
+}
+.container{
+    border: 1px solid rgba(66, 63, 63, 0.781);
+    height: 70vh;
+    max-width: 955px;
+    margin: auto;
+    box-shadow: 2px 3px rgba(27, 24, 24, 0.2);
+    overflow-y: auto;
+}
+
+.message{
+    background: linear-gradient(90deg, transparent,rgba(144, 134, 134, 0.4),transparent);  
+    backdrop-filter: blur(7px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);  
+    /* color: rgb(234, 201, 201); */
+    width: auto;
+    height: auto;
+    padding: 5px 15px;
+    margin: 7px 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+.spans{
+    font-size: 13px;
+    color: cyan;
+    margin-bottom: 30px;
+}
+#msg-send{
+    color: white;
+    text-shadow: 2px 2px rgb(64, 60, 60);
+
+}
+.right{
+    background: linear-gradient(to left, transparent,rgba(144, 134, 134, 0.4),transparent);  
+
+    border-bottom-left-radius: 15px;
+    float: right;
+    clear: both;
+}
+#msg-receive{
+    color: white;
+    text-shadow: 2px 2px rgb(64, 60, 60);
+
+}
+.left{
+    border-bottom-right-radius: 15px;
+    float: left;
+    clear: both;
+}
+#logo-left{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+#send-container{
+    display: block;
+    margin: auto;
+    max-width:955px ;
+    width: 100%;
+    text-align: center;
+
+}
+#messageInp{
+    width: 70%;
+    border-radius: 8px;
+    height: 25px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1),rgba(156, 148, 148, 0.4),rgba(255, 255, 255, 0.1));  
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
+    color: white;
+    outline: none;
+    padding-left: 30px;
+}
+.btn{
+    cursor: pointer;
+    border: 1px solid rgb(21, 220, 21);
+    border-radius: 6px;
+    height: 30px;
+    width: 55px;
+    /* color: green; */
+    background-image: linear-gradient(to right,#D4145A , #FBB03B);
+    margin-left: 5px;
+    box-shadow: 2px 2px rgb(114, 103, 103);
+    transition:all 5s;
+}
+.btn:active{
+    background-image: linear-gradient(to right,#03ba58 , #FCEE21);
+}
+
+#client-count{
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+header{
+    background: linear-gradient(45deg, transparent,rgba(156, 148, 148, 0.4),transparent);  
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+    display: flex;
+    align-items: center;
+}
+#profile-pic{
+    height: 35px;
+    width: 35px;
+    margin: 5px 15px;
+    border-radius: 50%;
+}
+#name-input{
+    padding: 3px 4px;
+    width: auto;
+    height: auto ;
+    border:  none;
+    outline: none;
+    background-color: none;
+    background: linear-gradient(90deg, transparent,rgba(144, 134, 134, 0.4),transparent);  
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+span{
+    color: white;
+}
+
+        /* MODAL CSS */
+
+.modal-wrapper{
+    /* display: none; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(41, 40, 40, 0.5);
+    backdrop-filter: 8px;
+}
+.modal-container{
+    /* display: none; */
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    max-width: 35rem !important;
+    background-color: #fff;
+    padding: 2rem 3rem;
+    text-align: center;
+    border-radius: 5px;
+    margin: 50px;
+}
+
+.button{
+    background-color: blue;
+    border: none;
+    color: white;
+    box-shadow: 3px 3px 3px rgb(49, 47, 47);
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px 6px;
+    margin: 40px 30px;
+}
+.button:hover{
+    background-color: #05fd78;
+    border-radius: 2px solid #05fd78;
+    color: black;
+
+}
+.textField{
+    width: 220px;
+    height: 32px;
+    margin: 20px;
+    /* border: 1px solid black; */
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 7px  rgb(84, 84, 84);
+    border-radius: 5px;
+
+}
+#browse{
+    /* height: 15px ; */
+    display: none;
+    margin: 20px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 7px  rgb(84, 84, 84);
+    
+}
+.update{
+    background-color: red;
+    border: none;
+    color: white;
+    box-shadow: 3px 3px 7px rgb(49, 47, 47);
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 8px 15px;
+    margin: 50px 30px;
+}
+.update:hover{
+    background-color: #05fd78;
+    color: black;
+}

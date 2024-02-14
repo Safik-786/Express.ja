@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%- include('../partials/headerLinks.ejs') %>
+
+    
+    <title><%= errorMessage %></title>
+</head>
+
+<body>
+
+    <%- include('../partials/navbar.ejs') %>
+
+
+    <!-- Main header -->
+    
+    <div style="display: flex; justify-content: center; position: relative;" >
+        <img src="https://t4.ftcdn.net/jpg/03/88/63/83/360_F_388638369_wSBADhKfhiTx6Q5Pz1xfdpy6zotku1Sg.jpg" alt="" height="500" width="900" >
+    </div>
+    <div style="display: flex; justify-content: center;  ">
+
+        <a style="position: absolute; top: 80%;"
+        href="/"><button  class="btn  px-5 py-3" style="background-color: rgb(2, 2, 90); color: aliceblue; font-size: 15px;">Home</button></a>
+        
+    </div>
+
+    <!--  Footer -->
+    <%- include('../partials/footer.ejs') %>
+
+    
+</body>
+
+</html>

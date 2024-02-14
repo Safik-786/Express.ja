@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%- include('../partials/headerLinks.ejs') %>
+
+    <title><%= title %></title>
+</head>
+
+<body>
+
+    <%- include('../partials/navbar.ejs') %>
+
+    <!-- Main header -->
+    <div class="container-fluid main-header">
+        <div class="row ">
+            <!-- left side div -->
+            <div class="col-md-6 col-12 main-header-left">
+                <p>Welcome to my Weather Apk</p>
+                <h1>Get the Latest <span class="text-clr"> Weather </span>Update Info Of Your City</h1>
+                <a href="/weather"><button>Check Now</button></a>
+            </div>
+            <!-- carousel -->
+            <div class="col-md-6 col-12 main-header-right">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active " data-bs-interval="1000">
+                            <img src="https://img.freepik.com/premium-vector/little-boy-holding-umbrella-standing-rain_642458-1.jpg?size=626&ext=jpg&ga=GA1.1.59391120.1701828459&semt=ais"
+                                class=" w-100    carousel-image" alt="...">
+                        </div>
+                        <div class="carousel-item " data-bs-interval="2000">
+                            <img src="/images/Lovepik_com-401520821-cartoon-weather-is-windy-and-rainy.png"
+                                class=" w-100 carousel-image " alt="...">
+                        </div>
+                        <div class="carousel-item  " data-bs-interval="2000">
+                            <img src="/images/5b7d762267fae.png" class=" w-100 carousel-image " alt="...">
+                        </div>
+                        <div class="carousel-item  " data-bs-interval="2000">
+                            <img src="/images/—Pngtree—sun and cloud inside mobile_5442374 (1).png"
+                                class=" w-100 carousel-image" alt="...">
+                        </div>
+                        <!-- <div class="carousel-item  " data-bs-interval="2000">
+                            <img src="" class=" w-100 carousel-image"
+                                alt="...">
+                        </div> -->
+
+                    </div>
+                    <button class="carousel-control-prev carousel-dark" type="button"
+                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carousel-dark" type="button"
+                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Footer -->
+    <%- include('../partials/footer.ejs') %>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400;8..30,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', 'serif';
+}
+.row>* {
+    padding: 0 !important;
+}
+:root{
+    --main-bg:#1e272e;
+    --main-color:#0097e6;
+}
+html{
+    font-size: 62.5%;
+    /* 1rem:10px */
+}
+body{
+    height: 100vh;
+}
+.carousel-inner{
+    height: 65rem;
+}
+.carousel-image{
+    height: 100% !important;
+}
+
+.main-menu{
+    background-color: #292b2c;
+}
+
+.navbar-toggler{
+    /* background-color: white; */
+}
+.navbar a{
+    color: #fff ;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+.navbar a:hover{
+    color:var(--main-color) !important ;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+.fa-snowflake{
+    transition:  all linear ;
+    animation: rotate 2s linear infinite  ;
+    color: var(--main-color);
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* main header */
+.main-header-left{
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.main-header-left p{
+    font-size: 2rem;
+}
+.main-header-left h1{
+    font-size: 3rem;
+    margin: 1rem 0 4rem 0;
+}
+.text-clr{
+    color: var(--main-color);
+}
+.main-header-left button{
+    border: none;
+    padding: 0.6rem 0.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 3px 4px 6px #000;
+    outline: none;
+}
+.main-header-left button:hover{
+    box-shadow: 4px 5px 8px var(--main-color);
+    color: var(--main-color);
+
+}
+
+/* footer styling */
+footer{
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+    position: fixed;
+    padding: 1rem 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 2.3rem;
+}
+footer p{
+    margin: 0;
+    color: cyan;
+    font-size: 1.4rem;
+}
+
+footer p a{
+    text-decoration: none;
+    color: antiquewhite;
+    margin: 0 1rem;
+}
+
+
+
+
+/* Responsive code */
+
+@media (max-width:768) {
+    footer{
+    line-height: 2.3rem;
+    }
+    footer p{
+        font-size: 0.8rem;
+    }
+
+
+}
